@@ -29,7 +29,7 @@ const App = () => {
 
         <div className="relative z-0">
           <SectionWrapper Component={Contact} idName="contact" />
-          <SectionWrapper Component={StarsCanvas} idName="star-canvas" />
+          {<SectionWrapper Component={StarsCanvas} idName="star-canvas" />}
         </div>
       </div>
     </BrowserRouter>

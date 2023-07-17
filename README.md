@@ -2,7 +2,7 @@
 
 ## Alternative design for a portfolio
 
-In this mini project was developed using the following technologies: 
+This mini project was developed using the following technologies: 
 
 - TypeScript
 - React
