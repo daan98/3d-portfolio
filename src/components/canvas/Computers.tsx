@@ -1,6 +1,6 @@
 import {useEffect, useState, Suspense, useRef} from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 import { Mesh } from 'three';
 
 import CanvasLoader from "../Loader";

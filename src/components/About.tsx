@@ -5,7 +5,6 @@ import { styles } from "../styles";
 import { services } from "../constants/constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { ServiceCardInterface } from "../Interfaces";
-import SectionWrapper from "../hoc/SectionWrapper";
 
 const About = () => {
   return (

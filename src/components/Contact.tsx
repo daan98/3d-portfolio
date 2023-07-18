@@ -1,10 +1,9 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
-import { slideIn, textVariant } from '../utils/motion';
+import { slideIn } from '../utils/motion';
 import { EmailInterface } from '../Interfaces';
 
 const Contact = () => {
@@ -23,15 +22,23 @@ const Contact = () => {
 
   const handleOnSubmit = (e : any) => {
     e.preventDefault();
+    setLoading(true);
+    
     if (!form.name || !form.email || !form.message) {
+      setLoading(false);
       console.log('All fields must be filled');
       return;
     }
 
     if (!emailRegExp.test(form.email)) {
+      setLoading(false);
       console.log("Please write a valid email. Example: test@somehing.com");
       return;
     }
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
 
   }
   
