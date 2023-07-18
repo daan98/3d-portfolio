@@ -9,7 +9,7 @@ import { ComputersInterface } from "../../Interfaces";
 const Computers = (props : ComputersInterface) => {
   const { isMobile, isGalaxyFold } = props;
   
-  const computer = useGLTF("../../public/desktop_pc/scene.gltf");
+  const computer = useGLTF("../../desktop_pc/scene.gltf");
   const meshRef = useRef<Mesh>(null!);
   
   return (
